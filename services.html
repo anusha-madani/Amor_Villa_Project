@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VILLA AMOR</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/services.css">
+</head>
+
+
+
+<body>
+  <!-- navbar -->
+  <header class="navbar">
+    <div class="logo"> <i>VILLA AMOR</i></div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact Us</a>
+
+    </nav>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </header>
+
+  <!-- 
+heading -->
+  <div class="header">
+    <h1>Our Services </h1>
+  </div>
+
+
+
+  <!-- servive section -->
+  <section class="services-container">
+
+    <div class="service-card">
+      <img src="images/services pic1.jpg"
+        alt="Luxury Villa Stay" />
+      <h2>🏡 Luxury Villa Stay</h2>
+      <p>"Enjoy spacious rooms, private pool, and modern amenities in a tranquil setting."</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/services pic 2.jpg"
+        alt="Private Chef & Catering">
+      <h2>🍽️ Private Chef & Catering</h2>
+      <p>"Delight in gourmet meals crafted by our in-house chef with custom menus just for you."</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/services pic 3.jpg"
+        alt="Events & Celebrations">
+      <h2>🎉 Events & Celebrations</h2>
+      <p>"Host your dream wedding, party, or retreat with full planning and decor services."</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/services pic 4.jpg"
+        alt="Wellness & Spa">
+      <h2>🧘 Wellness & Spa</h2>
+      <p>"Relax and rejuvenate with massage therapies, yoga sessions, and holistic treatments."</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/services pic 5.jpg"
+        alt="Concierge & Tours">
+      <h2>🚐 Concierge & Tours</h2>
+      <p>"Airport transfers, local experiences, and 24/7 assistance for a seamless stay."</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/services pic 6.jpg"
+        alt="built cniema">
+      <h2>🎬 Custom-built cinema</h2>
+      <p>"Experience the magic of cinema — right in your own home."</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/services pic 7.jpg"
+        alt="Grocery Pre-stocking">
+      <h2>🛒 Grocery Pre-stocking</h2>
+      <p>"Have your fridge filled with your favorite items before you arrive."</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/services pic 8.jpg"
+        alt="Childcare Services">
+      <h2>🧸 Childcare Services</h2>
+      <p>"Trusted nannies and babysitters available on request."</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/services pic 9.jpg"
+        alt="Laundry & Dry Cleaning">
+      <h2>🧺 Laundry & Dry Cleaning</h2>
+      <p>"Fast, professional service to keep your wardrobe fresh during your stay."</p>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <!-- footer -->
+  <footer class="villa-footer">
+    <div class="villa-row">
+      <div class="villa-col">
+        <h1 class="villa-title">Villa Amor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae enim expedita sit quibusdam, delectus
+          explicabo rem a accusantium. Dicta!</p>
+      </div>
+      <div class="villa-col">
+        <h3>Office <div class="villa-underline"><span></span></div>
+        </h3>
+        <p>ITPL Road <br>Whitefield, Banglore <br>Karantaka, PIN 564700, Pakistan</p>
+        <p class="villa-email-id">villaamor@gmail.com</p>
+        <h4>0324 5798908</h4>
+      </div>
+      <div class="villa-col">
+        <h3>Links <div class="villa-underline"><span></span></div>
+        </h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="villa-col">
+        <h3>Newsletter <div class="villa-underline"><span></span></div>
+        </h3>
+        <form class="villa-form">
+          <input type="email" placeholder="Enter your E-mail id" required>
+        </form>
+        <div class="villa-social-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="villa-copyright"> &copy; 2025 All Rights Reserved</p>
+  </footer>
+</body>
+
+
+<script>
+  // navbar script
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</html>

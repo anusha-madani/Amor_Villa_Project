@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VILLA AMOR</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/contact.css">
+
+
+
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <header class="navbar">
+    <div class="logo"> <i>VILLA AMOR</i></div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact Us</a>
+
+    </nav>
+
+
+
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </header>
+
+  <!-- header -->
+  <div class="header">
+    <h1>Contact Us </h1>
+  </div>
+  <!-- section -->
+  <section class="contact-section">
+    <p class="section-label">| CONTACT US</p>
+    <h1 class="section-heading">Get In Touch With<br>Our Agents</h1>
+  </section>
+  <br>
+  <br>
+  <!-- map  -->
+  <div class="contact-container">
+    <div class="map ">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.0271055911403!2d-105.44782982569848!3d20.87095769318161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8421167ae788ab07%3A0xe905f2f97067241f!2sThe%20Original%20Villa%20Amor!5e0!3m2!1sen!2s!4v1746993008045!5m2!1sen!2s"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- form -->
+    <div class="form">
+      <form>
+        <input type="text" id="name" placeholder="Your Name..." required>
+        <input type="email" id="email" placeholder="Your E-mail..." required>
+        <input type="text" id="subject" placeholder="Subject..." required>
+        <textarea id="msg" placeholder="Your Message" rows="5" required></textarea>
+        <button id="sndMsg" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <!-- contact info -->
+  <div class="contact-info">
+    <div class="info-box">
+      <i class="fas fa-phone-alt"></i>
+      <div>
+        <strong>0324 5798908</strong><br>Phone Number
+      </div>
+    </div>
+    <div class="info-box">
+      <i class="fas fa-envelope"></i>
+      <div>
+        <strong>villaamor@gmail.com</strong><br>Business Email
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <!-- footer -->
+  <footer class="villa-footer">
+    <div class="villa-row">
+      <div class="villa-col">
+        <h1 class="villa-title">Villa Amor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae enim expedita sit quibusdam, delectus
+          explicabo rem a accusantium. Dicta!</p>
+      </div>
+      <div class="villa-col">
+        <h3>Office <div class="villa-underline"><span></span></div>
+        </h3>
+        <p>ITPL Road <br>Whitefield, Banglore <br>Karantaka, PIN 564700, Pakistan</p>
+        <p class="villa-email-id">villaamor@gmail.com</p>
+        <h4>0324 5798908</h4>
+      </div>
+      <div class="villa-col">
+        <h3>Links <div class="villa-underline"><span></span></div>
+        </h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="villa-col">
+        <h3>Newsletter <div class="villa-underline"><span></span></div>
+        </h3>
+        <form class="villa-form">
+
+          <input type="email" placeholder="Enter your E-mail id" required>
+        </form>
+        <div class="villa-social-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="villa-copyright"> &copy; 2025 All Rights Reserved</p>
+  </footer>
+</body>
+
+
+
+
+
+
+<script>
+
+  // navbar script
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+
+  // button script
+  document.getElementById('sndMsg').addEventListener('click', function () {
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const msg = document.getElementById('msg');
+    const subject = document.getElementById('subject');
+    if (name && email && msg && subject) {
+      alert('Thanks for your message');
+    }
+
+  });
+</script>
+
+
+</html>
